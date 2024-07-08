@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const bookRoutes = require('./routes/bookRoutes');
-const mongoose = require('./config');
+const bookRoutes = require('../routes/bookRoutes');
+const mongoose = require('../config');
 const dotenv = require('dotenv');
 const path = require('path');
 

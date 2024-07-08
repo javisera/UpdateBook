@@ -67,8 +67,8 @@ router.put('/books/:id', async (req, res) => {
             book.pages = req.body.pages;
         }
 
-        const updateBook = await book.save();
-        res.json(updateBook);
+        const updatedBook = await book.save();
+        res.json(updatedBook);
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
